@@ -49,7 +49,7 @@ class ResultsViewCell: UITableViewCell {
         var textToShare = "";
         
         if (arabic) {
-            textToShare = textToShare + "\(ayah.arabicAyah) \n(\(ayah.surahName) الآيه \(ayah.surahNum):\(ayah.ayahNum))"
+            textToShare = textToShare + "\(ayah.arabicAyah) \n(\(ayah.surahName), الآيه \(ayah.ayahNum))"
         }
         
         if (arabic && english) {
@@ -57,7 +57,7 @@ class ResultsViewCell: UITableViewCell {
         }
         
         if (english) {
-            textToShare = textToShare + "\(ayah.translatedAyah) \n(\(ayah.translatedSurah) verse \n(\(ayah.surahNum):\(ayah.ayahNum))"
+            textToShare = textToShare + "\(ayah.translatedAyah) \n(\(ayah.translatedSurah), verse \(ayah.ayahNum))"
         }
         
         let objectsToShare = [textToShare] as [Any]
